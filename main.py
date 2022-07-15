@@ -5,6 +5,7 @@ from oseti.osetiPack import oseti
 from datetime import datetime 
 from dateutil.relativedelta import relativedelta
 import matplotlib.pyplot as plt
+import settings
 
 nowdate = datetime.now()
 
@@ -34,11 +35,11 @@ six_days_ago =  isoFormat(date6.strftime('%Y-%m-%d'))
 seven_days_ago =  isoFormat(date7.strftime('%Y-%m-%d'))
 
 # API情報を記入
-BEARER_TOKEN        = "AAAAAAAAAAAAAAAAAAAAAJUSdQEAAAAAWSwMPRPApdIuKZOthuPaZfAIzME%3DvfX3aSIv7oJGQAOtiyBM2kpSprorR6DqrYDgeYDtdKLQATq6DH"
-API_KEY             = "GvPbPrkU32Nkg2C4msIJJO7Lk"
-API_SECRET          = "SB2RhlH4OSb2Yr7sqyyVSpzn0TXeD0H7RiWTuboe2NceSNhJKV"
-ACCESS_TOKEN        = "1532342514438377472-WKLxNFrWR2s9TgsORY4cuBg5kSHfsi"
-ACCESS_TOKEN_SECRET = "6Fcy1810xg22ulSKiRR4650MXKpso3RpKNyPojUKGrJYW"
+BEARER_TOKEN        = settings.BEARER_TOKEN
+API_KEY             = settings.API_KEY
+API_SECRET          = settings.API_SECRET
+ACCESS_TOKEN        = settings.ACCESS_TOKEN
+ACCESS_TOKEN_SECRET = settings.ACCESS_TOKEN_SECRET
 
 
 # クライアント関数を作成
