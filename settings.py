@@ -3,7 +3,7 @@ import os
 from os.path import join, dirname
 from dotenv import load_dotenv
 
-dotenv_path = join(dirname(__file__), '.env')
+dotenv_path = join(dirname(__file__), 'env/.env')
 load_dotenv(dotenv_path)
 
 BEARER_TOKEN = os.environ.get('BEARER_TOKEN')
